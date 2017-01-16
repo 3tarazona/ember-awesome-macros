@@ -1,5 +1,5 @@
 import { normalizeArray } from './-utils';
 
-export default normalizeArray({}, (array, key, value) => {
-  return array.isEvery(key, value);
+export default normalizeArray({}, (array, ...args) => {
+  return array.isEvery(...args);
 });
